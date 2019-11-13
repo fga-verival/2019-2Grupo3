@@ -62,7 +62,11 @@ public class Aplicacao {
 		}
 
 		public float calcularRendimentoLiquido() {
-			return 1.0829f;
+			float rl = 0;
+			float r = calcularRendimentoBruto() - calcularImpostoDeRenda();
+			rl = r / aplicacaoInicial * 100;
+			
+			return rl;
 		}
 		
 		
