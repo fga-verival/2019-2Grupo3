@@ -14,5 +14,11 @@ public class RendimentoBrutoTest {
 		Aplicacao aplicacao = new Aplicacao(60, 1000f, 8.5f, 22.5f);
 		assertEquals(13.97f, aplicacao.calcularRendimentoBruto(), 0.01f);
 	}
+	
+	@Test
+	public void testRendimentoBruto2() {
+		Aplicacao aplicacao = new Aplicacao(120, 500f, 8f, 22.5f);
+		assertEquals(13.15f, aplicacao.calcularRendimentoBruto(), 0.01f);
+	}
 
 }
