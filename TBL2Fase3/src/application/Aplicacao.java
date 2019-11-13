@@ -10,8 +10,8 @@ public class Aplicacao {
 		public Aplicacao(Integer qtdDias, Float aplicacaoInicial, Float taxaJurosAnual, Float aliquotaImpostoRenda) {
 			this.qtdDias = qtdDias;
 			this.aplicacaoInicial = aplicacaoInicial;
-			this.taxaJurosAnual = taxaJurosAnual;
-			this.aliquotaImpostoRenda = aliquotaImpostoRenda;
+			this.taxaJurosAnual = taxaJurosAnual / 100f; // dividindo para obter a porcentagem
+			this.aliquotaImpostoRenda = aliquotaImpostoRenda / 100f; // dividindo para obter a porcentagem
 		}
 
 		public Integer getQtdDias() {
@@ -47,7 +47,11 @@ public class Aplicacao {
 		}
 
 		public float calcularRendimentoBruto() {
-			return 13.97f;
+			float rb = 0;
+			float periodo = qtdDias / 365f;
+			
+			rb = periodo * aplicacaoInicial * taxaJurosAnual;
+			return rb;
 		}
 		
 		
