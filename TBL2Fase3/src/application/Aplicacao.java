@@ -53,6 +53,10 @@ public class Aplicacao {
 			rb = periodo * aplicacaoInicial * taxaJurosAnual;
 			return rb;
 		}
+
+		public float calcularImpostoDeRenda() {
+			return 3.14f;
+		}
 		
 		
 
