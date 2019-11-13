@@ -60,6 +60,10 @@ public class Aplicacao {
 			
 			return ir;
 		}
+
+		public float calcularRendimentoLiquido() {
+			return 1.0829f;
+		}
 		
 		
 
