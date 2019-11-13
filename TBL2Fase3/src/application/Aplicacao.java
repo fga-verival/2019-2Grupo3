@@ -55,7 +55,10 @@ public class Aplicacao {
 		}
 
 		public float calcularImpostoDeRenda() {
-			return 3.14f;
+			float ir = 0;
+			ir = calcularRendimentoBruto() * aliquotaImpostoRenda;
+			
+			return ir;
 		}
 		
 		
